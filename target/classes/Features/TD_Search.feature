@@ -1,5 +1,6 @@
-Feature: Search for any product
 
+Feature: Search for any product
+@c
   Scenario: User can Search for product using sku
 
     And   user navigate to home page

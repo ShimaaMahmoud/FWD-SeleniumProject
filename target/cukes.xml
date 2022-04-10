@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.676">
+    <testcase classname="Logged user could create successful order" name="create successful order" time="21.364">
+        <system-out>
+            <![CDATA[Given there is logged in user...............................................passed
+Given user select specific category.........................................passed
+When user click on Add to cart..............................................passed
+And user check shopping cart................................................passed
+Then order is created sucsessfully..........................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

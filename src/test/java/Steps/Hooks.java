@@ -8,13 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Hooks
-{
+public class Hooks {
     static WebDriver driver;
 
     @Before
-    public static void user_open_chrome_browser()
-    {
+    public static void user_open_chrome_browser() {
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -23,8 +21,9 @@ public class Hooks
         driver.navigate().to("https://demo.nopcommerce.com/");
     }
 
-    @After
-    public static void quitdriver() throws InterruptedException {
-Thread.sleep(2000);
-        driver.quit();
-    }}
+//    @After
+//    public static void quitdriver() throws InterruptedException {
+//Thread.sleep(2000);
+//        driver.quit();
+//    }}
+}

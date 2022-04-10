@@ -1,5 +1,5 @@
 Feature: Registration
-  @t
+  @c
   Scenario: User can register  with valid data
 
     When  user enter valida data
