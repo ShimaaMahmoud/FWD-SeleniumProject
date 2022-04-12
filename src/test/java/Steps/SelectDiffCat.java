@@ -48,12 +48,12 @@ String mail=f.name().toString();
                .findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[3]/ul/li[1]/a"))).click().
                build().perform();
 
-
+System.out.println("woooooooooooooooooooooowww");
     }
     @Then("user find  the relative results")
     public void user_find_the_relative_results() {
         String url= Hooks.driver.getCurrentUrl();
-        Assert.assertTrue(url.contains("notebooks"));
+        Assert.assertTrue(url.contains("shoes"));
 
     }
 

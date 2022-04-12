@@ -1,5 +1,5 @@
  Feature: Logged user could add different products to Shopping cart
-@c
+@smoke
 Scenario: Add product to cart
 
 Given  there is logged in user

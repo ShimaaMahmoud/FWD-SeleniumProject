@@ -1,5 +1,6 @@
 Feature: Logining
-@c
+  @smoke
+
 
   Scenario: user could login with valid email and password
   When there is registered user

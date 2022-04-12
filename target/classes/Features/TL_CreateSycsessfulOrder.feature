@@ -1,5 +1,5 @@
 Feature: Logged user could create successful order
-  @cc
+  @smoke
   Scenario: create successful order
 
     Given  there is logged in user

@@ -1,6 +1,6 @@
 
 Feature: Search for any product
-@c
+  @smoke
   Scenario: User can Search for product using sku
 
     And   user navigate to home page

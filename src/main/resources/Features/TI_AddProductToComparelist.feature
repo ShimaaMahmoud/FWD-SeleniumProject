@@ -1,5 +1,5 @@
 Feature: Logged user could add different products to comparelist
-@c
+  @smoke
   Scenario: Add product to comparelist
 
     Given  there is logged in user

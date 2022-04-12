@@ -1,6 +1,6 @@
 
 Feature: Logged user could add different products to wishlist
-@c
+  @smoke
   Scenario: Add product to wishlist
 
     Given  there is logged in user

@@ -1,5 +1,5 @@
 Feature: filter by color
-
+  @smoke
   Scenario: User can filter by color
 
     Given  there is logged in user

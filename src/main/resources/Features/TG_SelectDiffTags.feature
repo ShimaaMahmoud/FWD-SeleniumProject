@@ -1,5 +1,5 @@
 Feature: Select specific category
-@c
+  @smoke
   Scenario: User can Select different category
 
 
