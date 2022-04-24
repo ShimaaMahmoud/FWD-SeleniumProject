@@ -1,5 +1,6 @@
 package Steps;
 
+import Pages.SearchPage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -19,6 +20,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SearchProduct {
 
+    SearchPage searchPage;
 
     @Given("user navigate to home page")
     public void user_navigate_to_home_page() {
@@ -28,12 +30,8 @@ public class SearchProduct {
     }
     @When("user search on specific product")
     public void user_search_on_specific_product() {
-      WebElement search= Hooks.driver.findElement(By.id("small-searchterms"));
-             search .sendKeys("laptop");
-             search.submit();
-
-
-
+       searchPage=new SearchPage(Hooks.driver);
+       searchPage.searchbyitem("laptop");
     }
     @Then("user find relative results")
     public void user_find_relative_results() {

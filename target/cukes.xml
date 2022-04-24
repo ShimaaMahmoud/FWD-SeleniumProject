@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="152.822">
-    <testcase classname="Registration" name="User can register  with valid data" time="9.437">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="128.41">
+    <testcase classname="Registration" name="User can register  with valid data" time="7.498">
         <system-out>
             <![CDATA[When user enter valida data.................................................passed
 Then user can register sucsessfully.........................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Logining" name="user could login with valid email and password" time="16.306">
+    <testcase classname="Logining" name="user could login with valid email and password" time="15.246">
         <system-out>
             <![CDATA[When there is registered user...............................................passed
 Given user go to login page.................................................passed
@@ -17,7 +17,7 @@ Then user login to the system successfully..................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Reset Password" name="user can reset password" time="8.634">
+    <testcase classname="Reset Password" name="user can reset password" time="8.4">
         <system-out>
             <![CDATA[Given user go to reset password page........................................passed
 When user enter valid mail..................................................passed
@@ -25,7 +25,7 @@ Then user can reset password sucsessfully...................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Search for any product" name="User can Search for product using sku" time="7.391">
+    <testcase classname="Search for any product" name="User can Search for product using sku" time="4.249">
         <system-out>
             <![CDATA[And user navigate to home page..............................................passed
 When user search on specific product........................................passed
@@ -33,14 +33,14 @@ Then user find relative results.............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="user can switch between currencies" name="user could login with valid email and password" time="5.285">
+    <testcase classname="user can switch between currencies" name="user could login with valid email and password" time="4.876">
         <system-out>
             <![CDATA[When user select Uro........................................................passed
 When user select US Dollar..................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Select specific category" name="User can Select different category" time="11.037">
+    <testcase classname="Select specific category" name="User can Select different category" time="9.638">
         <system-out>
             <![CDATA[Given there is logged in user...............................................passed
 When user select specific category..........................................passed
@@ -48,7 +48,7 @@ Then user find  the relative results........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Select specific category" name="User can Select different category" time="8.102">
+    <testcase classname="Select specific category" name="User can Select different category" time="5.659">
         <system-out>
             <![CDATA[Given user navigate to tags page............................................passed
 When user select appearal tags..............................................passed
@@ -58,7 +58,7 @@ Then user get results related to books......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Logged user could add different products to wishlist" name="Add product to wishlist" time="18.683">
+    <testcase classname="Logged user could add different products to wishlist" name="Add product to wishlist" time="13.245">
         <system-out>
             <![CDATA[Given there is logged in user...............................................passed
 Given user select specific category.........................................passed
@@ -67,7 +67,7 @@ Then product added sucsessfully to wishlist.................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Logged user could add different products to comparelist" name="Add product to comparelist" time="13.983">
+    <testcase classname="Logged user could add different products to comparelist" name="Add product to comparelist" time="14.05">
         <system-out>
             <![CDATA[Given there is logged in user...............................................passed
 Given user select specific category.........................................passed
@@ -75,7 +75,7 @@ When user click on Add to comparelist.......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="filter by color" name="User can filter by color" time="14.64">
+    <testcase classname="filter by color" name="User can filter by color" time="10.155">
         <system-out>
             <![CDATA[Given there is logged in user...............................................passed
 Given user select specific category.........................................passed
@@ -84,7 +84,7 @@ Then element is checked.....................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Logged user could add different products to Shopping cart" name="Add product to cart" time="14.466">
+    <testcase classname="Logged user could add different products to Shopping cart" name="Add product to cart" time="12.841">
         <system-out>
             <![CDATA[Given there is logged in user...............................................passed
 Given user select specific category.........................................passed
@@ -93,7 +93,7 @@ Then product added sucsessfully to cart.....................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Logged user could create successful order" name="create successful order" time="24.51">
+    <testcase classname="Logged user could create successful order" name="create successful order" time="22.121">
         <system-out>
             <![CDATA[Given there is logged in user...............................................passed
 Given user select specific category.........................................passed

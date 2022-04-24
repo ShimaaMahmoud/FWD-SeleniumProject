@@ -1,5 +1,6 @@
 Feature: Logged user could create successful order
   @smoke
+
   Scenario: create successful order
 
     Given  there is logged in user

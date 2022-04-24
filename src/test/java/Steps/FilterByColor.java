@@ -1,5 +1,6 @@
 package Steps;
 
+import Pages.ColorFlitrationPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
@@ -8,15 +9,17 @@ import org.testng.Assert;
 
 public class FilterByColor {
     WebElement checkBox;
+    ColorFlitrationPage colorFlitrationPage;
     @When("user select specific color")
     public void user_select_specific_color() {
-        checkBox= Hooks.driver.findElement(By.xpath("//*[@id=\"attribute-option-14\"]"));
-        checkBox.click();
-
+        colorFlitrationPage=new ColorFlitrationPage(Hooks.driver);
+        colorFlitrationPage.filterbycolor();
     }
 
     @Then("element is checked")
     public void elementIsChecked() {
-        Assert.assertTrue(checkBox.isSelected());
+        colorFlitrationPage=new ColorFlitrationPage(Hooks.driver);
+
+        Assert.assertTrue(colorFlitrationPage.checkbox.isSelected());
     }
 }

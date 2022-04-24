@@ -1,5 +1,6 @@
 package Steps;
 
+import Pages.HomePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,7 +15,7 @@ public class SelectDiffCat {
 
 Faker f=new Faker();
 String mail=f.name().toString();
-
+HomePage page;
     @Given("there is logged in user")
     public void there_is_logged_in_user() {
         Hooks.driver.findElement(By.cssSelector("a[class=\"ico-register\"]")).click();
@@ -35,20 +36,9 @@ String mail=f.name().toString();
     }
     @When("user select specific category")
     public void user_select_specific_category() {
-//        Actions action = new Actions(Hooks.driver);
-//        WebElement webEle = Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a"));
-//        action.moveToElement(webEle ).moveToElement(Hooks.driver
-//                .findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/ul/li[2]/a"))).click().
-//                build().perform();
-
-
-        Actions action = new Actions(Hooks.driver);
-       WebElement webEle = Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[3]/a"));
-        action.moveToElement(webEle ).moveToElement(Hooks.driver
-               .findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[3]/ul/li[1]/a"))).click().
-               build().perform();
-
-System.out.println("woooooooooooooooooooooowww");
+   page=new HomePage(Hooks.driver);
+   page.selectSubCat();
+   System.out.println("woooooooooooooooooooooowww");
     }
     @Then("user find  the relative results")
     public void user_find_the_relative_results() {

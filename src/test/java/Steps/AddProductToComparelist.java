@@ -1,18 +1,15 @@
 package Steps;
 
+import Pages.CompareListPage;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class AddProductToComparelist {
+    CompareListPage compareListPage;
     @When("user click on Add to comparelist")
     public void user_add_product_to_comparelist() throws InterruptedException {
-        Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div[3]/div/div[2]/div[2]/div[2]/div/div/div[1]/div/div[1]/a/img")).click();
-        Select list = new Select(Hooks.driver.findElement(By.id("product_attribute_9")));
-        list.selectByVisibleText("9");
-        Hooks.driver.findElement(By.xpath("//*[@id=\"product-details-form\"]/div[2]/div[1]/div[2]/div[10]/div[2]/button")).click();
-        Thread.sleep(2000);
-        Assert.assertTrue( Hooks.driver.findElement(By.id("bar-notification")).getText().contains("comparison"));
+        compareListPage=new CompareListPage(Hooks.driver);
+        compareListPage.addtocomparelist();
+        Assert.assertTrue( compareListPage.bar1.getText().contains("comparison"));
     }
 }
